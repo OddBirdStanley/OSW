@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+}
+#map{
+    height: 100vh;
+}
+#panel{
+    background-color: white;
+    z-index: 1001;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-250px);
+    height: 500px;
+    width: 200px;
+}
+#action{
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+#action button{
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    cursor: pointer;
+}
+.action-active{
+    color: red;
+}
+#ambiguity{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1002;
+    background-color: white;
+    padding: 50px;
+    transform: translateX(-50%) translateY(-50%);
+}
+#ambiguity span{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+#ambiguity-list{
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+}
+#ambiguity-list li{
+    cursor: pointer;
+    line-height: 30px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    padding-left: 10px;
+}
+#ambiguity-list li:hover{
+    background-color: rgba(230,230,230,0.25);
+}
+.ambiguity-active{
+    border-color: red !important;
+}
+.population-bar{
+    width: 20px;
+    height: 4px;
+    background-color: green;
+    transform: translateX(-4px)translateY(-6px);
+}

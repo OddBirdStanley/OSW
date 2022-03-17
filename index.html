@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="leaflet/leaflet.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="leaflet/leaflet.js"></script>
+		<script src="leaflet/leaflet-omnivore.min.js"></script>
+	</head>
+	<body>
+		<div id="map"></div>
+		<div id="panel">
+			<div id="action">
+				<button id="action-select">@</button>
+				<button id="action-add">+</button>
+				<button id="action-move">&gt;</button>
+			</div>
+		</div>
+		<div id="ambiguity">
+			<span>Select one piece</span>
+			<ul id="ambiguity-list"></ul>
+			<div>
+				<button id="ambiguity-cancel">Cancel</button>
+				<button id="ambiguity-confirm">Confirm</button>
+			</div>
+		</div>
+		<script src="osw.js"></script>
+	</body>
+</html>
